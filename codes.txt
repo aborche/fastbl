@@ -1,0 +1,30 @@
+127.0.0.2 DNSBL
+127.0.0.10 Connection rate limit
+127.0.0.12 Bogus hostname
+127.0.0.13 Bogus HELO
+
+127.0.0.224 Null From:
+127.0.0.225 Not trusted
+127.0.0.226 HELO blocked category
+127.0.0.227 Host name blocked
+127.0.0.228 Unresolved HELO
+127.0.0.229 MX sender geozone
+127.0.0.230 HELO sender geozone
+127.0.0.231 IP <> HELO IP
+127.0.0.232 Unprintable From:
+127.0.0.233 Unprintable To:
+127.0.0.234 Numeric From:
+127.0.0.235 Numeric To:
+
+
+127.0.0.240 Graylist to user
+127.0.0.241 Graylist from user
+127.0.0.242 Graylist to domain
+127.0.0.243 Graylist from domain
+127.0.0.244 Graylist from zone
+127.0.0.245 Graylist from host
+127.0.0.247 INIT Graylist
+
+127.0.0.253 Graylisted before apptime
+127.0.0.254 Blacklisted
+127.0.0.255 NULL IP

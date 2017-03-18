@@ -1,0 +1,40 @@
+zone "dnsbl.dmz" IN {
+        type master;
+        file "master/empty.db";
+};
+
+zone "userbl.dmz" IN {
+type forward;
+forward first;
+forwarders { 10.6.204.2 port 53; };
+};
+
+zone "fastbl.dmz" IN {
+type forward;
+forward first;
+forwarders { 10.6.204.2 port 531; };
+};
+
+zone "helobl.dmz" IN {
+type forward;
+forward first;
+forwarders { 10.6.204.2 port 531; };
+};
+
+#zone "tstbl.dmz" IN {
+#type forward;
+#forward first;
+#forwarders { 127.0.0.1 port 531; };
+#};
+
+zone "rcptbl.dmz" IN {
+type forward;
+forward first;
+forwarders { 10.6.204.2 port 531; };
+};
+
+zone "upd.dmz" IN {
+type forward;
+forward first;
+forwarders { 10.6.204.2 port 531; };
+};
